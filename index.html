@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineFlix - Watch & Download Movies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Cine<span>Flix</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Premium</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <div class="right-section">
+                <div class="search-box">
+                    <input type="text" placeholder="Search movies...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+
+
+                
+                <button class="login-btn">Sign In</button>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unlimited Movies, TV Shows and More.</h1>
+            <p>Watch anywhere. Download anytime.</p>
+            <div class="hero-buttons">
+                <button class="watch-btn"><i class="fas fa-play"></i> Watch Now</button>
+                <button class="download-btn"><i class="fas fa-download"></i> Download</button>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Featured Movies Section -->
+    <section class="featured-movies">
+        <div class="section-header">
+            <h2>Featured Movies</h2>
+            <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="movies-container" id="featuredMovies">
+            <!-- Movies will be loaded here via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Trending Now Section -->
+    <section class="trending-now">
+        <div class="section-header">
+            <h2>Trending Now</h2>
+            <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="movies-container" id="trendingMovies">
+            <!-- Movies will be loaded here via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download-section">
+        <div class="download-content">
+            <div class="download-text">
+                <h2>Download Your Movies to Watch Offline</h2>
+                <p>Save your favorites easily and always have something to watch.</p>
+                <button class="download-btn"><i class="fas fa-download"></i> Learn More</button>
+            </div>
+            <div class="download-image">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="#">Cine<span>Flix</span></a>
+                <p>Your ultimate destination for movies and TV shows</p>
+            </div>
+            <div class="footer-links">
+                <div class="links-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CineFlix. All Rights Reserved. Made ❤️ Quantum Soft </p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Movie Modal -->
+    <div class="modal" id="movieModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <div class="modal-poster">
+                    <img id="modalPoster" src="" alt="Movie Poster">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <div class="meta-info">
+                        <span id="modalYear"></span>
+                        <span id="modalRuntime"></span>
+                        <span id="modalRating"></span>
+                    </div>
+                    <p id="modalPlot"></p>
+                    <div class="modal-genres" id="modalGenres"></div>
+                    <div class="modal-buttons">
+                        <button class="watch-btn"><i class="fas fa-play"></i> Watch Now</button>
+                        <button class="download-btn"><i class="fas fa-download"></i> Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
